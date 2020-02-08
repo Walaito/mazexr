@@ -1,0 +1,259 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body class="a-body aframe-inspector-opened" data-gr-c-s-loaded="true">
+    <a-scene
+      class="fullscreen"
+      canvas=""
+      inspector="url:https://unpkg.com/aframe-inspector@0.5.x/dist/aframe-inspector.min.js"
+      keyboard-shortcuts="enterVR:true;exitVR:true;resetSensor:true"
+      screenshot="width:4096;height:2048"
+      vr-mode-ui="enabled:true"
+      auto-enter-vr="display:GearVR;enabled:true"
+    >
+      <a-assets>
+        <img
+          id="boxTexture"
+          src="https://img.freepik.com/free-photo/abstract-wooden-seamless-texture-background_23-2148283204.jpg?size=626&ext=jpg"
+        />
+        <img
+          id="skyTexture"
+          src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"
+        />
+      </a-assets>
+
+      <!--objects-->
+      <a-box
+        src="#boxTexture"
+        position="0 5 -5"
+        rotation="0 45 45"
+        scale="1.5 1.5 1.5"
+        animation="dur:  5000;  easing:  linear;  from:  0;  property:  object3D.rotation.z;  startEvents:  ;  pauseEvents:  ;  resumeEvents:  ;  to:  360;  loop:  true"
+        change-color-on-hover="color: blue"
+      ></a-box>
+
+      <!-- <a-box
+        position="0 1.6 0"
+        animation="property: position; to: 5 1.6 0; dur: 1500; easing: linear"
+      ></a-box> -->
+
+      <a-sphere
+        src="#boxTexture"
+        position="-4 5 5.7"
+        rotation="0 45 45"
+        scale="1 1 1"
+        animation="dur:  5000;  easing:  linear;  from:  0;  property:  object3D.rotation.z;  startEvents:  ;  pauseEvents:  ;  resumeEvents:  ;  to:  360;  loop:  true"
+        change-color-on-hover="color: blue"
+      ></a-sphere>
+      <!--end objects-->
+
+      <!--bush-->
+      <a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="-3.076 0.436 -4.094"
+        rotation="90 0 0"
+        scale="1 5 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+        visible="true"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="-4.445 0.436 -3.125"
+        rotation="90.01166961505233 90.01166961505233 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+        visible="true"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="0.004 0.436 -7.76"
+        rotation="90.01166961505233 90.01166961505233 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+        visible="true"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="3.504 0.436 6.473"
+        rotation="90.01166961505233 -90 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+        visible="true"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="4.338 0.436 -3"
+        rotation="90.01166961505233 0 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+        visible="true"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="7.801 0.436 2.516"
+        rotation="90.01166961505233 0 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+        visible="true"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="4.338 0.436 10.968"
+        rotation="90 90 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+        visible="true"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="-0.422 0.436 10.968"
+        rotation="90.01166961505233 0 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="-7.563 0.436 2.815"
+        rotation="90.01166961505233 0 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="-5.806 0.436 2.815"
+        rotation="90.01166961505233 -90 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+      ></a-cylinder
+      ><a-cylinder
+        src="https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg"
+        position="-5.806 0.436 10.973"
+        rotation="90.012 -90 0"
+        scale="1 8 10"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        shadow=""
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        material="src: https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&amp;ext=jpg; color: #FFC65D"
+      ></a-cylinder>
+      <!--end bush-->
+
+      <a-sky src="#skyTexture"></a-sky>
+
+      <a-assets>
+        <!-- ... -->
+        <img
+          id="groundTexture"
+          src="https://img.freepik.com/free-photo/ground-texture-background-beige-desert-soil-dusty-land-dry-earth-sand_95401-1378.jpg?size=626&ext=jpg"
+        />
+        <!-- ... https://img.freepik.com/free-photo/green-grass-textures_74190-5443.jpg?size=626&ext=jpg-->
+      </a-assets>
+
+      <!-- ... -->
+      <a-plane
+        src="#groundTexture"
+        position="0 0.23 0"
+        rotation="-90 0 0"
+        width="30"
+        height="30"
+      ></a-plane>
+      <!-- ... -->
+
+      <!-- Out of the box environment! -->
+      <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+      <a-entity
+        camera="active: false"
+        position="0 3 0"
+        rotation="-12.605071492878109 0.3437746770785496 0"
+        aframe-injected=""
+      ></a-entity>
+
+      <!-- <a-box
+        color="#EF2D5E"
+        position="0 1 -4"
+        change-color-on-hover="color: pink"
+      ></a-box> -->
+
+      <a-camera><a-cursor></a-cursor></a-camera>
+    </a-scene>
+    <script>
+      AFRAME.registerComponent("change-color-on-hover", {
+        schema: {
+          color: { default: "red" }
+        },
+
+        init: function() {
+          var data = this.data;
+          var el = this.el; // <a-box>
+          var defaultColor = el.getAttribute("material").color;
+
+          el.addEventListener("mouseenter", function() {
+            el.setAttribute("color", data.color);
+          });
+
+          el.addEventListener("mouseleave", function() {
+            el.setAttribute("color", defaultColor);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
